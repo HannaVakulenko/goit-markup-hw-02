@@ -1,0 +1,232 @@
+/* color:
+primary bgc #F5F5F5,
+ secondary bgc #F5F4FA наша команда,
+ hero&footer bgc background: #2F303A;
+h2-h3 color: #212121;
+p color: #757575; +adress
+logo color: #000000 #2196F3 (blue? active) #FFFFFF (footer)
+tel&mail footer color: rgba(255, 255, 255, 0.6);
+
+*/
+/* Raleway - secondary font*/
+:root {
+  --primary-bgc-color: #F5F5F5;
+  --secondary-bgc-color: #F5F4FA;
+  --hero-ftr-bgc-color: #2F303A;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --logo-color: #000000;
+  --white-text-color: #FFFFFF;
+  --accent-color: #2196F3;
+  --ftr-text-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+/* убирає маркери в ненумерованих списках */
+.list {
+    list-style: none;
+}
+/* убирає нижнє підкрислення в посиланнях */
+.link {
+    text-decoration: none;
+}
+
+
+/* клас для всіх скритих елементів */
+.visually-hidden {
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+a, h2, h3 {
+  color: var(--title-text-color);
+}
+
+p {
+  color: var(--primary-text-color)
+}
+
+/* -----header-------- */
+.header {
+  background-color: var(--primary-bgc-color);
+}
+
+.header-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.header-logo .span {
+  color: var(--logo-color);
+}
+
+.header-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-address .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.link:hover, .link:focus {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+/* ------hero-------- */
+.hero {
+  background-color: var(--hero-ftr-bgc-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+
+}
+/* ----Work---- */
+.work {
+  background-color: var(--primary-bgc-color);
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.feature-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+/* ----team---- */
+section.team {
+  background-color: var(--secondary-bgc-color);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.team-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.team-item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+/* ----footer---- */
+
+.footer {
+  background-color: var(--hero-ftr-bgc-color);
+}
+
+.ftr-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.ftr-logo span {
+  color: var(--white-text-color);
+}
+
+.ftr-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-text-color);
+}
+
+.ftr-contact {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--ftr-text-color);
+}
+
