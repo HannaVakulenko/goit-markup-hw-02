@@ -16,9 +16,11 @@ tel&mail footer color: rgba(255, 255, 255, 0.6);
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --logo-color: #000000;
-  --white-text-color: #FFFFFF;
+  --white-logo-color: #FFFFFF;
   --accent-color: #2196F3;
   --ftr-text-color: rgba(255, 255, 255, 0.6);
+  --btn-hover-focus: #188CE8;
+  --border-color: #EEEEEE;
 }
 
 body {
@@ -59,7 +61,7 @@ p {
 
 /* -----header-------- */
 .header {
-  background-color: var(--primary-bgc-color);
+  background-color: var(--white-logo-color);
 }
 
 .header-logo {
@@ -71,7 +73,7 @@ p {
   color: var(--accent-color);
 }
 
-.header-logo .span {
+.header-logo .span-color {
   color: var(--logo-color);
 }
 
@@ -111,7 +113,7 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white-text-color);
+  color: var(--white-logo-color);
 }
 
 .hero-btn {
@@ -123,13 +125,18 @@ p {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--white-text-color);
+  color: var(--white-logo-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-style: none;
 
 }
+.hero-btn:hover, .hero-btn:focus {
+  background-color: var(--btn-hover-focus);
+  cursor: pointer;
+}
+
 /* ----Work---- */
 .work {
   background-color: var(--primary-bgc-color);
@@ -175,6 +182,16 @@ section.team {
   color: var(--title-text-color);
 }
 
+.team-card {
+  background: var(--white-logo-color);
+}
+
+.team-card:hover, .team-card:focus {
+  background: var(--white-logo-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px; 
+}
+
 .team-item {
   font-weight: 500;
   font-size: 16px;
@@ -184,7 +201,7 @@ section.team {
   color: var(--title-text-color);
 }
 
-.team-item-text {
+.team-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -208,8 +225,8 @@ section.team {
   color: var(--accent-color);
 }
 
-.ftr-logo span {
-  color: var(--white-text-color);
+.ftr-logo .span-color {
+  color: var(--white-logo-color);
 }
 
 .ftr-address {
@@ -218,7 +235,7 @@ section.team {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--white-text-color);
+  color: var(--white-logo-color);
 }
 
 .ftr-contact {
@@ -229,4 +246,59 @@ section.team {
   letter-spacing: 0.03em;
   color: var(--ftr-text-color);
 }
+
+/* -----Portfolio-main------(header&footer=same as home page) */
+/* -----filters----- */
+.filters-btn {
+  background: var(--secondary-bgc-color);
+  border-radius: 4px;
+  border-style: none;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.filters-btn.current-filter {
+  background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: var(--white-logo-color);
+}
+
+.filters-btn:hover, .filters-btn:focus {
+  cursor: pointer;
+}
+
+/* -------Proekts-------- */
+
+.proekt-card {
+  background: var(--white-logo-color);
+  border: 1px solid var(--border-color);
+}
+
+.proekt-card:hover, .proekt-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.proekt-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.proekt-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
 
