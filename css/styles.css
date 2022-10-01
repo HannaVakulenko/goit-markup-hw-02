@@ -94,7 +94,6 @@ p {
 
 .link:hover, .link:focus {
   color: var(--accent-color);
-  cursor: pointer;
 }
 
 .current {
@@ -152,7 +151,6 @@ p {
 }
 
 .feature-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -202,7 +200,6 @@ section.team {
 }
 
 .team-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -231,7 +228,6 @@ section.team {
 
 .ftr-address {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -240,7 +236,6 @@ section.team {
 
 .ftr-contact {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -263,15 +258,23 @@ section.team {
   color: var(--title-text-color);
 }
 
-.filters-btn.current-filter {
+.current-filter {
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color: var(--white-logo-color);
 }
 
+
+
 .filters-btn:hover, .filters-btn:focus {
   cursor: pointer;
+  color: var(--accent-color);
+  }
+
+.current-filter:hover, .current-filter:focus {
+  color: var(--white-logo-color);
+  background: var(--btn-hover-focus);
 }
 
 /* -------Proekts-------- */
@@ -294,7 +297,6 @@ section.team {
 }
 
 .proekt-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
